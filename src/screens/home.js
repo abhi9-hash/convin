@@ -20,7 +20,6 @@ export default function Home() {
 
   useEffect(() => {
     dispatch(listUsers());
-    console.log("user", user);
   }, [dispatch]);
 
   const handleClick = (id) => {
@@ -61,7 +60,7 @@ export default function Home() {
                     </div>
 
                     <div style={{ justifyContent: "center", display: "flex" }}>
-                      <img size={100} src={user.avatar}></img>
+                      <img alt={user.id} size={100} src={user.avatar}></img>
                     </div>
                     <Paper
                       style={{
