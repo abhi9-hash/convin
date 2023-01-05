@@ -16,7 +16,7 @@ export default function Home() {
   const { loading, error, users } = userList;
 
   const userDetail = useSelector((state) => state.userDetails);
-  const { loading: userLoading, error: userError, user } = userDetail;
+  const { loading: userLoading, user } = userDetail;
 
   useEffect(() => {
     dispatch(listUsers());
