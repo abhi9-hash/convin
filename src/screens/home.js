@@ -5,7 +5,7 @@ import LoadingBox from "../components/loadingBox";
 import "./home.css";
 import { useDispatch, useSelector } from "react-redux";
 import { listUsers, userDetails } from "../components/actions/userActions";
-import { Box, Button, Grid, Paper, Typography } from "@material-ui/core";
+import { Box, Button, Paper, Typography } from "@material-ui/core";
 
 export default function Home() {
   const dispatch = useDispatch();

@@ -1,5 +1,4 @@
 import {createStore,  applyMiddleware, combineReducers, compose} from 'redux';
-import {configureStore} from '@reduxjs/toolkit'
 import thunk from 'redux-thunk'
 import { userlistReducers , userDetailsReducers} from './reducers/userReducers';
 
