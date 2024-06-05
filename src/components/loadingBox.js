@@ -1,12 +1,12 @@
 import React from 'react'
-import { CircularProgress } from '@material-ui/core';
+import { Alert, Spin } from 'antd';
 
-function loadingBox() {
+function LoadingBox() {
     return (
-        <div style={{width:'100vw', height:'100vh', display: 'flex', justifyContent:'center', alignItems:'center'}}>
-           <CircularProgress/>  Loading... 
-        </div>
+        <Spin tip="Loading...">
+        <Alert message="Loading Workspace Details" type="info" />
+      </Spin>
     )
 }
 
-export default loadingBox
+export default LoadingBox
